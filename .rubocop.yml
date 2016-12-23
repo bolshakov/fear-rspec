@@ -6,3 +6,9 @@ Style/MethodName:
 
 Style/Documentation:
   Enabled: false
+
+RSpec/ExpectActual:
+  Enabled: false
+
+RSpec/DescribeClass:
+  Enabled: false

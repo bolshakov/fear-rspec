@@ -31,19 +31,30 @@ require 'fear/rspec'
 To match against a `Left`, use `be_left_of` matcher.
 
 ```ruby
-expect(5).not_to   be_left_of(5)  # passes
-expect(Left(5)).to be_left_of(5)  # passes
-expect(Left(1)).to be_left_of(5)  # fails
+expect(5).not_to    be_left_of(5) # passes
+expect(Left(5)).to  be_left_of(5) # passes
+expect(Left(1)).to  be_left_of(5) # fails
 expect(Right(5)).to be_left_of(5) # fails
 ```
 
 To match against a `Right`, use `be_right_of` matcher.
 
 ```ruby
-expect(5).not_to   be_right_of(5)  # passes
+expect(5).not_to    be_right_of(5) # passes
 expect(Right(5)).to be_right_of(5) # passes
 expect(Right(1)).to be_right_of(5) # fails
-expect(Left(5)).to be_right_of(5)  # fails
+expect(Left(5)).to  be_right_of(5) # fails
+```
+
+### Option matchers
+
+To match against a `Some`, use `be_some_of` matcher.
+
+```ruby
+expect(5).not_to   be_some_of(5)  # passes
+expect(Some(5)).to be_some_of(5)  # passes
+expect(Some(1)).to be_some_of(5)  # fails
+expect(None()).to  be_some_of(5)  # fails
 ```
 
 ## Development
