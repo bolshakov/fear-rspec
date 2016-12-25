@@ -26,6 +26,25 @@ Load matchers:
 require 'fear/rspec'
 ```
 
+### Try matchers
+
+To match against a `Failure`, use `be_failure_of` matcher.
+
+```ruby
+expect(Failure(ArgumentError)).to be_failure_of(ArgumentError) # passes
+expect(Failure(ArgumentError)).to  be_failure_of(RuntimeError) # fails
+expect(Success(5)).to                         be_failure_of(5) # fails
+```
+
+To match against a `Success`, use `be_success_of` matcher.
+
+```ruby
+expect(5).not_to                  be_success_of(5) # passes
+expect(Success(5)).to             be_success_of(5) # passes
+expect(Success(1)).to             be_success_of(5) # fails
+expect(Failure(ArgumentError)).to be_success_of(5) # fails
+```
+
 ### Either matchers
 
 To match against a `Left`, use `be_left_of` matcher.

@@ -5,15 +5,15 @@ RSpec.describe '#be_left_of' do
     be_left_of(1).tap { |m| m.matches?(1) }
   end
 
-  it 'matches when actual is Right of expected' do
+  it 'matches when actual is Left of expected' do
     expect(Left(1)).to be_left_of(1)
   end
 
-  it 'does not match when actual in not a Right of expected' do
+  it 'does not match when actual in not a Left of expected' do
     expect(Left(1)).not_to be_left_of(2)
   end
 
-  it 'does not match when actual is not a Right' do
+  it 'does not match when actual is not a Left' do
     expect(1).not_to be_left_of(1)
   end
 
