@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/fear-rspec.svg)](https://badge.fury.io/rb/fear-rspec)
+
 # Fear::Rspec
 
 `fear-rspec` is a set of rspec matchers for [Fear](https://github.com/bolshakov/fear).
