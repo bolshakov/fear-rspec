@@ -78,6 +78,14 @@ expect(Some(1)).to be_some_of(5)  # fails
 expect(None()).to  be_some_of(5)  # fails
 ```
 
+To match against a `None`, use `be_none` matcher.
+
+```ruby
+expect(5).not_to   be_none # passes
+expect(Some(5)).to be_none # fails
+expect(None()).to  be_none # passes
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.

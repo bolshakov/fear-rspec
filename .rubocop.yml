@@ -1,14 +1,66 @@
-inherit_gem:
-  spbtv_code_style: .strict_rubocop.yml
+inherit_mode:
+  merge:
+  - Exclude
 
-Style/MethodName:
+AllCops:
+  Exclude:
+  - 'gemfiles/**/*'
+  - 'vendor/bundle/'
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Metrics/ClassLength:
+  Enabled: false
+
+Naming/MethodName:
+  Enabled: false
+
+Naming/UncommunicativeMethodParamName:
   Enabled: false
 
 Style/Documentation:
   Enabled: false
 
-RSpec/ExpectActual:
+Style/CaseEquality:
   Enabled: false
 
-RSpec/DescribeClass:
+Style/AccessModifierDeclarations:
+  EnforcedStyle: inline
+
+Style/GuardClause:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/NumericPredicate:
+  Enabled: false
+
+Style/CommentedKeyword:
+  Enabled: false
+
+Layout/IndentHeredoc:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+  - spec/**/*
+  - Rakefile
+  - fear.gemspec
+  - examples/**/*
+
+Metrics/LineLength:
+  Max: 120
+
+Lint/UselessComparison:
   Enabled: false
