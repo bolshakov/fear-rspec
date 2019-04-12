@@ -1,5 +1,4 @@
-# coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path('lib', __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'fear/rspec/version'
 
@@ -23,9 +22,9 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'bundler', '~> 1.13'
   spec.add_development_dependency 'rake', '~> 10.0'
-  spec.add_development_dependency 'spbtv_code_style'
-  spec.add_development_dependency 'rubocop-rspec'
+  spec.add_development_dependency 'rubocop', '0.65.0'
+  spec.add_development_dependency 'rubocop-rspec', '1.32.0'
 
-  spec.add_runtime_dependency 'rspec', '~> 3.0'
   spec.add_runtime_dependency 'fear', '>= 1.0.0'
+  spec.add_runtime_dependency 'rspec', '~> 3.0'
 end
