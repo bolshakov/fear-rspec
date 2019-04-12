@@ -27,5 +27,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rubocop-rspec'
 
   spec.add_runtime_dependency 'rspec', '~> 3.0'
-  spec.add_runtime_dependency 'fear', '>= 0.1.0'
+  spec.add_runtime_dependency 'fear', '>= 1.0.0'
 end
