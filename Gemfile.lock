@@ -13,7 +13,7 @@ GEM
     fear (1.1.0)
       lru_redux
       treetop
-    jaro_winkler (1.5.2)
+    jaro_winkler (1.5.3)
     lru_redux (1.1.0)
     parallel (1.17.0)
     parser (2.6.3.0)
@@ -45,7 +45,7 @@ GEM
       rainbow (>= 2.2.2, < 4.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (~> 1.4.0)
-    rubocop-rspec (1.33.0)
+    rubocop-rspec (1.34.0)
       rubocop (>= 0.60.0)
     ruby-progressbar (1.10.1)
     treetop (1.6.10)
@@ -60,7 +60,7 @@ DEPENDENCIES
   fear-rspec!
   rake (~> 12.3)
   rubocop (= 0.65.0)
-  rubocop-rspec (= 1.33.0)
+  rubocop-rspec (= 1.34.0)
 
 BUNDLED WITH
    1.17.3
