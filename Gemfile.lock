@@ -19,8 +19,6 @@ GEM
     parser (2.6.3.0)
       ast (~> 2.4.0)
     polyglot (0.3.5)
-    powerpack (0.1.2)
-    psych (3.1.0)
     rainbow (3.0.0)
     rake (12.3.3)
     rspec (3.8.0)
@@ -36,21 +34,19 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
-    rubocop (0.65.0)
+    rubocop (0.74.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
-      parser (>= 2.5, != 2.5.1.1)
-      powerpack (~> 0.1)
-      psych (>= 3.1.0)
+      parser (>= 2.6)
       rainbow (>= 2.2.2, < 4.0)
       ruby-progressbar (~> 1.7)
-      unicode-display_width (~> 1.4.0)
+      unicode-display_width (>= 1.4.0, < 1.7)
     rubocop-rspec (1.35.0)
       rubocop (>= 0.60.0)
     ruby-progressbar (1.10.1)
     treetop (1.6.10)
       polyglot (~> 0.3)
-    unicode-display_width (1.4.1)
+    unicode-display_width (1.6.0)
 
 PLATFORMS
   ruby
@@ -59,7 +55,7 @@ DEPENDENCIES
   bundler (~> 1.13)
   fear-rspec!
   rake (~> 12.3)
-  rubocop (= 0.65.0)
+  rubocop (= 0.74.0)
   rubocop-rspec (= 1.35.0)
 
 BUNDLED WITH
