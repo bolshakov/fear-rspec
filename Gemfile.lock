@@ -22,7 +22,7 @@ GEM
     powerpack (0.1.2)
     psych (3.1.0)
     rainbow (3.0.0)
-    rake (13.0.0)
+    rake (13.0.1)
     rspec (3.9.0)
       rspec-core (~> 3.9.0)
       rspec-expectations (~> 3.9.0)
