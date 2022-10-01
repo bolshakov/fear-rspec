@@ -10,15 +10,11 @@ GEM
   specs:
     ast (2.4.0)
     diff-lcs (1.4.4)
-    fear (1.2.0)
-      lru_redux
-      treetop
+    fear (2.0.0)
     jaro_winkler (1.5.3)
-    lru_redux (1.1.0)
     parallel (1.17.0)
     parser (2.6.3.0)
       ast (~> 2.4.0)
-    polyglot (0.3.5)
     powerpack (0.1.2)
     psych (3.1.0)
     rainbow (3.0.0)
@@ -48,8 +44,6 @@ GEM
     rubocop-rspec (1.35.0)
       rubocop (>= 0.60.0)
     ruby-progressbar (1.10.1)
-    treetop (1.6.11)
-      polyglot (~> 0.3)
     unicode-display_width (1.4.1)
 
 PLATFORMS
